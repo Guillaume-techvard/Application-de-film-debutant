@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  text-align: center;
+  background: rgba(128, 128, 128, 0.315);
+}
+
+nav {
+  height: 10vh;
+  background: #0d253f;
+}
+
+nav ul {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+nav ul li {
+  list-style: none;
+  color: whitesmoke;
+  align-items: center;
+  position: relative;
+}
+
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0d253f;
+  border: 1px solid #ddd;
+  z-index: 1000;
+  width: 300px; /* Augmenter la largeur pour tenir compte des images */
+  text-align: left;
+  padding: 10px;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+  height: auto;
+}
+
+.dropdown li {
+  display: flex; /* Pour aligner les images et le texte horizontalement */
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #444;
+  transform: scaleX(1.05);
+}
+
+.dropdown li img {
+  margin-right: 10px;
+}
+
+.tete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulaireDeRecherche {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5%;
+}
+
+#btn {
+  border-radius: 5px;
+  border: 1px;
+  background: #90cea1;
+  margin: 0 0 0 15px;
+}
+
+#recherche {
+  background: none;
+  border: 1px solid;
+}
+
+.conteneur {
+  border: #0d253f 1px solid;
+  justify-content: center;
+  align-items: center;
+}

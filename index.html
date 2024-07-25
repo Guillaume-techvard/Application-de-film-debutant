@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="A apprendre par coeur">
+    <meta name="description"
+        content="Si vous ne connaissez pas tout le code de cette page par coeur, c'est que vous avez un niveau -5, meme pas 0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="tendances">Tendances
+                    <ul class="dropdown" id="tendancesDropdown"></ul>
+                </li>
+                <li id="affiche">À l'affiche
+                    <ul class="dropdown" id="afficheDropdown"></ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="conteneur">
+        <h1 class="tete">Recherche de Films</h1>
+        <form id="formulaireDeRecherche">
+            <input type="text" id="recherche" placeholder="Rechercher un film...">
+            <button type="submit" id="btn">Rechercher</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <footer>
+        <small><!--ici le contenu du footer--></small>
+    </footer>
+    <script src="/main.js" defer></script>
+</body>
+
+</html>
